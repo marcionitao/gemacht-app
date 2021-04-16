@@ -5,13 +5,24 @@
 </template>
 
 <script>
+import { provide, ref, watchEffect } from 'vue';
 import ToDoForm from '@/components/ToDoForm';
+
 export default {
   components: {
     ToDoForm
   },
   setup () {
-    
+    // alternative to Vuex
+    // here is the parent component that will be accessed by the child component
+    const todos = ref([]);
+    provide('todos', todos);
+
+    // watchEffect is one of the ways to track reactive dependencies in Vue3. 
+    // when the values are updated the method is run
+    watchEffect(() => {
+      console.log(todos.value.length);
+    })
 
     return {}
   }
