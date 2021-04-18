@@ -1,16 +1,20 @@
 <template> 
   <h1>ToDos</h1>
-  <!--Component Son-->
+  <!--Component Son Form-->
   <to-do-form></to-do-form>
+  <!--Component Son List-->
+  <to-do-list></to-do-list>
 </template>
 
 <script>
 import { provide, ref, watchEffect } from 'vue';
 import ToDoForm from '@/components/ToDoForm';
+import ToDoList from '@/components/ToDoList';
 
 export default {
   components: {
-    ToDoForm
+    ToDoForm,
+    ToDoList
   },
   setup () {
     // alternative to Vuex
