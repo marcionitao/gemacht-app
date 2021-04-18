@@ -8,8 +8,8 @@
 
 <script>
 import { provide, ref, watchEffect } from 'vue';
-import ToDoForm from '@/components/ToDoForm';
-import ToDoList from '@/components/ToDoList';
+import ToDoForm from './ToDoForm.vue';
+import ToDoList from './ToDoList.vue';
 
 export default {
   components: {

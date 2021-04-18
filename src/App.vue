@@ -7,7 +7,7 @@
 
 <script>
 
-import ToDoApp from '@/components/ToDoApp'
+import ToDoApp from '@/components/ToDoApp.vue'
 
 export default {
   name: 'App',
