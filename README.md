@@ -1,19 +1,10 @@
-# gemacht-app
+# Gemacht app
 
-## Project setup
-```
-npm install
-```
+Gemacht App is simple and awesome Vue app to organize your tasks with very easy to use interface. Gemacht App can help you to make list of your tasks and also you can set Reminder with specific tasks.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Technologies
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Vue
+- Composition API
+- Bootstrap
+- Font Awesome
