@@ -1,6 +1,6 @@
 <template>
    <li class="list-group-item d-flex justify-content-between align-items-center">
-     <span role="button">
+     <span role="button" @click="finished(todo.id)" :class="{'riscado': todo.estado}">
        {{ todo.texto }}
      </span>
      <span role="button">
@@ -28,11 +28,23 @@ export default {
       todos.value = todos.value.filter(item => item.id !== id)
     }
 
-    return { deleteItem }
+    const finished = (id) => {
+      // changed the status of false to true
+      todos.value = todos.value.map((item) => {
+        if (item.id === id) {
+          item.estado = true
+        }
+        return item
+      })
+    }
+    
+    return { deleteItem, finished }
   }
 }
 </script>
 
-<style lang="scss" scoped>
-
+<style>
+  .riscado {
+    text-decoration: line-through;
+  }
 </style>
