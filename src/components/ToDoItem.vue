@@ -19,6 +19,7 @@ export default {
       required: true
     }
   },
+  
   setup () {
     // Get List of Todos from parent Component(ToDoApp)
     const todos = inject('todos');
