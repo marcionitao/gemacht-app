@@ -20,6 +20,7 @@ export default {
     // alternative to Vuex
     // here is the parent component that will be accessed by the child component
     const todos = ref([]);
+    // option for changer the status of a Son Component
     provide('todos', todos);
 
     // watchEffect is one of the ways to track reactive dependencies in Vue3. 

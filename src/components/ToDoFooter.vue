@@ -23,8 +23,7 @@ export default {
     const deleteAllCompleted = () => {
       todos.value = todos.value.filter(item => item.estado === false);
     }
-    // 1:35:00
-    // https://www.youtube.com/watch?v=76epsLAAOdQ
+   
     return { contarItemsActives, deleteAllCompleted }
   }
 }
