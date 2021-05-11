@@ -8,3 +8,5 @@ Gemacht App is simple and awesome Vue app to organize your tasks with very easy 
 - Composition API
 - Bootstrap
 - Font Awesome
+
+## Screenshot
