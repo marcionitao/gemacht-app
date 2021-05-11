@@ -23,10 +23,17 @@ export default {
     // option for changer the status of a Son Component
     provide('todos', todos);
 
+    // if there is any item in local storage, so, bring to 'todos.value' them all in json format
+    if (localStorage.getItem('todos')) {
+      todos.value = JSON.parse(localStorage.getItem('todos'))
+    }
+
     // watchEffect is one of the ways to track reactive dependencies in Vue3. 
     // when the values are updated the method is run
     watchEffect(() => {
-      console.log(todos.value.length);
+      // console.log(todos.value.length);
+      // add items in localstorage in JSON format
+      localStorage.setItem('todos', JSON.stringify(todos.value))
     })
 
     return {}
